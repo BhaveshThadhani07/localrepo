@@ -1,4 +1,5 @@
 <p>This is a new repo.</p>
+<p>This is a new feature</p>
 
 now since we have done all the work, now we 
 have to upload our code on github
@@ -44,4 +45,65 @@ for for long on this branch, so we don't have
 to write git push origin main again and again,
 instead we can just write:
 git push 
+
+when starting with a new project, always start
+with by creating the project on github instead 
+of on our localmachine
+
+GIT BRANCHES
+if a lot of people are working on different 
+feature on a project,
+then for each feature we have different branch
+
+in the yt video the changes in differnet branches
+'ll be different for each branch, both changes 
+are different
+after working on different branches,
+if we want to merge both the branches 
+means we are matching the code of main 
+branch and feature branch(entering 
+the same code, we then merge to code with the 
+main copy(original))
+Why we create Branches?
+In Git, branches are created to work on different versions of 
+code simultaneously, without risking the codebase.
+
+GIT BRANCH COMMANDS:
+//to rename the branch
+git branch -M newname
+
+//to navigate from one branch to other
+git checkout --branch name--
+--branch name-- -> branch on which we have to navigate
+
+//to create a new branch
+git checkout -b --new branch name--
+
+//to delete a branch
+git branch -d --branch name--
+-d means delete
+if we are on feature2 branch then we can't delete feature2
+we have to navigate to any other branch 
+
+Now we 'll make changes to our new branch ie on feature1
+
+15/10/24
+MERGING CODE
+now if we want that we merge our feature branch and main branch 
+there are 2 ways for it:
+Way 1 
+we merge through git(cmd line) only
+when we want to compare 2 branches then we write:
+git diff <-branch name->
+we are now on our feature1 branch and if we want to compare feature1 branch with main branch
+then we write: git branch main
+it 'll show that our feature1 branch is ahead of our main branch and the green text shown
+are the positive changes extra added to feature1 branch 
+these are differences
+
+Now if we want to merge 2 branches, we write:
+this is the 1st way-> git merge main
+another way is using github
+if we want to merge 2 branches using github then we create a PR(pull request)
+pull request means we are entering the request to merge 
 
